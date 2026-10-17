@@ -1,0 +1,368 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>XLM · 一份说清楚的上网工具箱</title><meta name="description" content="XLM 用一份说得清的说明书，把套餐、客户端和使用方法摆在桌面上。先看对比表，再挑适合自己的那一档，不着急。"><meta name="keywords" content="XLM, 订阅服务, 套餐对比, 客户端安装, 常见问题, 网络工具"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-8fd7390234.jzznl.cn/"><meta property="og:type" content="website"><meta property="og:title" content="XLM · 一份说清楚的上网工具箱"><meta property="og:description" content="XLM 用一份说得清的说明书，把套餐、客户端和使用方法摆在桌面上。先看对比表，再挑适合自己的那一档，不着急。"><meta property="og:url" content="https://p-8fd7390234.jzznl.cn/"><meta property="og:site_name" content="XLM"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-8fd7390234.jzznl.cn/", "name": "XLM · 一份说清楚的上网工具箱", "description": "XLM 用一份说得清的说明书，把套餐、客户端和使用方法摆在桌面上。先看对比表，再挑适合自己的那一档，不着急。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="c16c92c7d18740cdb2f2f260:8e5f1f692c8abbba01be3f54c81d0dcd0652be703acdf611620413e9eab0e899:3a15c529ffc073a1b434"></head><body id="top"><style>
+  :root{--ink:#141414;--orange:#ff5a1f;--soft:#f4f4f2;--line:#141414;--muted:#5c5c5c}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#ffffff;color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--ink)}
+  .shell{display:grid;grid-template-columns:230px minmax(0,1fr);max-width:1240px;margin:0 auto;padding:0 24px;gap:0 48px}
+  /* ---------- 左侧竖排目录 ---------- */
+  .rail{position:sticky;top:0;align-self:start;height:100vh;padding:40px 0 40px;border-right:2px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+  .rail .mark{font-size:26px;font-weight:800;letter-spacing:0.06em;line-height:1}
+  .rail .mark span{display:block;font-size:11px;font-weight:600;letter-spacing:0.22em;color:var(--muted);margin-top:8px}
+  .rail nav ul{list-style:none;margin:32px 0 0;padding:0}
+  .rail nav li{margin:0 0 4px}
+  .rail nav a{display:block;text-decoration:none;padding:7px 10px 7px 0;font-size:14px;color:var(--muted);border-left:3px solid transparent;padding-left:12px}
+  .rail nav a:hover,
+  .rail nav a:focus{color:var(--ink);border-left-color:var(--orange)}
+  .rail .note{font-size:12px;color:var(--muted);line-height:1.6;padding-left:12px}
+  /* ---------- 主内容 ---------- */
+  main{padding:40px 0 96px;min-width:0}
+  h1,h2,h3{margin:0;line-height:1.25}
+  h2{font-size:26px;letter-spacing:0.01em;margin-bottom:8px}
+  h3{font-size:17px}
+  p{margin:0 0 14px}
+  .kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
+  section{margin-bottom:72px;scroll-margin-top:24px}
+  .lead{font-size:17px;color:var(--muted);max-width:56ch}
+  /* ---------- 首屏仪表盘拼贴 ---------- */
+  .hero{padding-top:8px}
+  .hero-head{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:32px;align-items:end;padding-bottom:28px;border-bottom:2px solid var(--line)}
+  .hero-head h1{font-size:clamp(34px,5.4vw,62px);font-weight:800;letter-spacing:-0.02em}
+  .hero-head h1 em{font-style:normal;color:var(--orange)}
+  .hero-side p{font-size:15px;color:var(--muted);margin-bottom:0}
+  .dash{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:2px solid var(--line);border-top:none}
+  .dash .cell{padding:20px 18px 22px;border-right:2px solid var(--line);min-height:132px}
+  .dash .cell:last-child{border-right:none}
+  .dash .cell .tag{font-size:11px;font-weight:700;letter-spacing:0.16em;color:var(--muted);text-transform:uppercase}
+  .dash .cell .num{font-size:34px;font-weight:800;letter-spacing:-0.02em;line-height:1.1;margin:10px 0 4px}
+  .dash .cell .num small{font-size:14px;font-weight:600;letter-spacing:0}
+  .dash .cell .sub{font-size:13px;color:var(--muted);line-height:1.55}
+  .dash .cell.accent{background:var(--orange);color:#fff;border-color:var(--line)}
+  .dash .cell.accent .tag,
+  .dash .cell.accent .sub{color:#fff;opacity:.86}
+  .hero-foot{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;padding:18px 0 0;font-size:14px;color:var(--muted)}
+  .hero-foot a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:1px}
+  /* ---------- 粗描边直角卡片 ---------- */
+  .board{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:24px}
+  .card{border:2px solid var(--line);padding:22px 20px 24px;background:#fff}
+  .card .idx{display:inline-block;font-size:12px;font-weight:800;letter-spacing:0.1em;color:var(--orange);margin-bottom:10px}
+  .card h3{margin-bottom:8px}
+  .card p{font-size:14px;color:var(--muted);margin-bottom:0}
+  /* ---------- 套餐横向对比表 ---------- */
+  .table-wrap{margin-top:22px;overflow-x:auto;border:2px solid var(--line)}
+  table{border-collapse:collapse;width:100%;min-width:660px;font-size:14px}
+  caption{caption-side:top;text-align:left;font-size:13px;color:var(--muted);padding:12px 16px;border-bottom:2px solid var(--line);background:var(--soft)}
+  th,td{padding:14px 16px;text-align:left;border-bottom:1px solid #dcdcd8;vertical-align:top}
+  thead th{background:var(--soft);font-size:13px;letter-spacing:0.06em;border-bottom:2px solid var(--line);white-space:nowrap}
+  thead th.hot{background:var(--orange);color:#fff}
+  tbody th{font-weight:600;white-space:nowrap;width:150px;color:var(--muted);font-size:13px}
+  td.pick{background:#fff5f0}
+  .price{font-size:20px;font-weight:800;letter-spacing:-0.01em}
+  .price small{font-size:12px;font-weight:600;color:var(--muted)}
+  .badge{display:inline-block;font-size:11px;font-weight:800;letter-spacing:0.1em;color:#fff;background:var(--orange);padding:2px 7px;margin-bottom:6px}
+  ul.feats{list-style:none;margin:0;padding:0}
+  ul.feats li{font-size:13.5px;line-height:1.6;padding-left:14px;position:relative}
+  ul.feats li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--orange)}
+  .table-note{font-size:13px;color:var(--muted);margin-top:14px;max-width:60ch}
+  /* ---------- 使用说明 ---------- */
+  .steps{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border:2px solid var(--line)}
+  .steps li{padding:22px 20px 24px;border-right:2px solid var(--line)}
+  .steps li:last-child{border-right:none}
+  .steps .n{font-size:13px;font-weight:800;letter-spacing:0.14em;color:var(--orange);display:block;margin-bottom:10px}
+  .steps h3{margin-bottom:6px;font-size:16px}
+  .steps p{font-size:14px;color:var(--muted);margin-bottom:0}
+  /* ---------- 客户端 ---------- */
+  .clients{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:24px}
+  .client{border:2px solid var(--line);border-top:8px solid var(--orange);padding:20px}
+  .client h3{margin-bottom:6px}
+  .client p{font-size:14px;color:var(--muted);margin-bottom:10px}
+  .client .meta{font-size:12px;color:var(--muted);border-top:1px dashed #c9c9c4;padding-top:10px;margin-top:auto}
+  .client a{display:inline-block;font-size:13px;font-weight:700;text-decoration:none;border-bottom:2px solid var(--orange)}
+  /* ---------- FAQ 双栏 ---------- */
+  .faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;margin-top:24px;border-top:2px solid var(--line);padding-top:8px}
+  .qa{padding:20px 0 18px;border-bottom:1px solid #dcdcd8}
+  .qa h3{font-size:15.5px;margin-bottom:8px;display:flex;gap:10px}
+  .qa h3 .q{color:var(--orange);font-weight:800;flex:0 0 auto}
+  .qa p{font-size:14px;color:var(--muted);margin:0 0 0 26px}
+  /* ---------- 页脚 ---------- */
+  footer{border-top:2px solid var(--line);padding:26px 0 0;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between}
+  /* ---------- 手机适配 ---------- */
+  @media (max-width:900px){.shell{
+      grid-template-columns:1fr;padding:0 18px;gap:0;}
+    .rail{
+      position:static;height:auto;border-right:none;border-bottom:2px solid var(--line);padding:22px 0 14px;flex-direction:row;flex-wrap:wrap;align-items:center;gap:12px 20px;justify-content:flex-start;}
+    .rail .mark{font-size:20px;}
+    .rail .mark span{display:inline;margin-left:8px;font-size:10px;}
+    .rail nav{margin-left:auto;}
+    .rail nav ul{
+      display:flex;flex-wrap:wrap;gap:2px 14px;margin:0;}
+    .rail nav a{padding:4px 0;border-left:none;border-bottom:2px solid transparent;padding-left:0;}
+    .rail nav a:hover,.rail nav a:focus{border-left-color:transparent;border-bottom-color:var(--orange);}
+    .rail .note{display:none;}
+    main{padding:26px 0 64px;}
+    .hero-head{grid-template-columns:1fr;align-items:start;gap:16px;padding-bottom:22px;}
+    .dash{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .dash .cell:nth-child(2){border-right:none;}
+    .dash .cell:nth-child(1),
+    .dash .cell:nth-child(2){border-bottom:2px solid var(--line);}
+    .faq-grid{grid-template-columns:1fr;gap:0;}
+    .steps li{border-right:none;border-bottom:2px solid var(--line);}
+    .steps li:last-child{border-bottom:none;}
+    h2{font-size:22px;}}
+</style><div class="shell">
+
+  <aside class="rail">
+    <div class="mark">XLM<span>使用说明与订阅</span></div>
+    <nav aria-label="页面目录">
+      <ul>
+        <li><a href="#overview">一眼看清</a></li>
+        <li><a href="#plans">套餐对比</a></li>
+        <li><a href="#how">怎么开始</a></li>
+        <li><a href="#clients">客户端</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <p class="note">这一页把能讲清楚的事都讲了。没讲到的，你可以直接问我们。</p>
+  </aside>
+
+  <main>
+
+    <section class="hero" id="overview">
+      <div class="hero-head">
+        <div>
+          <span class="kicker">XLM · 订阅说明</span>
+          <h1>XLM · 选一个不后悔的档位，<em>然后安心用</em></h1>
+        </div>
+        <div class="hero-side">
+          <p>XLM 这一页不卖关子。三档订阅的差别、客户端怎么装、遇到问题找谁——都摊开写在这里。看完再决定，也没什么损失。</p>
+        </div>
+      </div>
+
+      <div class="dash" role="list">
+        <div class="cell accent" role="listitem">
+          <span class="tag">档位</span>
+          <div class="num">3 <small>档</small></div>
+          <div class="sub">基础、旗舰、团队，按设备数与流量区分。</div>
+        </div>
+        <div class="cell" role="listitem">
+          <span class="tag">设备上限</span>
+          <div class="num">3–20 <small>台</small></div>
+          <div class="sub">从一个人用到一整个小组，都留了位置。</div>
+        </div>
+        <div class="cell" role="listitem">
+          <span class="tag">流量档位</span>
+          <div class="num">100–1000 <small>GB/月</small></div>
+          <div class="sub">按月计量，选档前先想想你一个月用多少。</div>
+        </div>
+        <div class="cell" role="listitem">
+          <span class="tag">计费方式</span>
+          <div class="num">月 / 年</div>
+          <div class="sub">月付灵活，年付划算，随你习惯。</div>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <span>不确定选哪档？先跳到 <a href="#plans">套餐对比</a>，横向看一遍再说。</span>
+      </div>
+    </section>
+
+    <section id="plans">
+      <span class="kicker">Plans</span>
+      <h2>三档订阅，横向摆开看</h2>
+      <p class="lead">同一张表里比较，省得来回翻页。旗舰版是大多数人的落点，但基础版和团队版也各有各的用处。</p>
+
+      <div class="table-wrap">
+        <table>
+          价格与权益以本表为准；年付价格按 12 个月一次性结算。
+          <thead>
+            <tr>
+              <th>对比项</th>
+              <th>基础版</th>
+              <th class="hot">旗舰版 · 推荐</th>
+              <th>团队版</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>月付价格</th>
+              <td><span class="price">¥15</span><small> /月</small></td>
+              <td class="pick"><span class="badge">推荐</span><br><span class="price">¥35</span><small> /月</small></td>
+              <td><span class="price">¥85</span><small> /月</small></td>
+            </tr>
+            <tr>
+              <th>年付价格</th>
+              <td>¥150 / 年</td>
+              <td class="pick">¥350 / 年</td>
+              <td>¥850 / 年</td>
+            </tr>
+            <tr>
+              <th>每月流量</th>
+              <td>100GB</td>
+              <td class="pick">300GB</td>
+              <td>1000GB</td>
+            </tr>
+            <tr>
+              <th>同时在线设备</th>
+              <td>3 台</td>
+              <td class="pick">5 台</td>
+              <td>20 台</td>
+            </tr>
+            <tr>
+              <th>主要权益</th>
+              <td>
+                <ul class="feats">
+                  <li>解锁基础流媒体</li>
+                  <li>普通线路节点池</li>
+                </ul>
+              </td>
+              <td class="pick">
+                <ul class="feats">
+                  <li>全节点原生流媒体解锁</li>
+                  <li>IPLC 专线游戏加速优化</li>
+                  <li>7×24 优先工单支持</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="feats">
+                  <li>VIP 专属高带宽节点</li>
+                  <li>支持企业定制路由</li>
+                  <li>专属客户经理服务</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>适合谁</th>
+              <td>一个人日常刷网页、看剧，设备不多。</td>
+              <td class="pick">手机加电脑加平板，还想打游戏顺畅一点。</td>
+              <td>小团队共用，需要统一管理和更高带宽。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="table-note">订阅变更、续费与发票相关事宜，请通过页面下方给出的联系方式与我们确认，本页不提供在线支付入口。</p>
+    </section>
+
+    <section id="how">
+      <span class="kicker">Getting started</span>
+      <h2>四步走完，就能开始用</h2>
+      <p class="lead">没有隐藏步骤。按顺序做，中间卡住了随时回来查这一节。</p>
+
+      <ol class="steps">
+        <li>
+          <span class="n">STEP 01</span>
+          <h3>先想清楚用多少</h3>
+          <p>数一数你手上有几台设备会同时连，再估一下每月大概用掉多少流量。这两个数字决定档位，比看价格更靠谱。</p>
+        </li>
+        <li>
+          <span class="n">STEP 02</span>
+          <h3>挑一档并确认</h3>
+          <p>对照上面的表选一档，把月付还是年付也定下来。拿不定主意就先月付，用满一个月再换成年付也不迟。</p>
+        </li>
+        <li>
+          <span class="n">STEP 03</span>
+          <h3>装上对应客户端</h3>
+          <p>看你用什么设备，到「客户端」一节找对应的系统。装好之后，把订阅信息填进去即可。</p>
+        </li>
+        <li>
+          <span class="n">STEP 04</span>
+          <h3>遇到问题先看 FAQ</h3>
+          <p>多半的问题在常见问题里已经有答案。真没找到，再联系我们，把现象说清楚，我们能省下不少来回。</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="clients">
+      <span class="kicker">Clients</span>
+      <h2>客户端，按你的设备来</h2>
+      <p class="lead">我们不自建客户端，也不在这里放下载链接——请以你所用设备的官方应用渠道为准，安装前多看一眼来源。</p>
+
+      <div class="clients">
+        <div class="client">
+          <h3>桌面端</h3>
+          <p>Windows 与 macOS 各有对应客户端，安装后填入订阅信息即可使用。</p>
+          <div class="meta">获取方式：请从你所选客户端的官方渠道下载。</div>
+        </div>
+        <div class="client">
+          <h3>移动端</h3>
+          <p>iOS 与 Android 各自的应用商店是首选渠道，注意核对开发者名称。</p>
+          <div class="meta">获取方式：以应用商店的官方条目为准。</div>
+        </div>
+        <div class="client">
+          <h3>订阅信息填写</h3>
+          <p>客户端通常支持链接导入或手动填写，具体字段以客户端提示为准，我们不在此复述界面细节。</p>
+          <div class="meta">如遇填写格式问题，可参考客户端内的说明文档。</div>
+        </div>
+        <div class="client">
+          <h3>设备数核对</h3>
+          <p>接入前确认在线设备数没有超过你所在档位的上限，超出的设备会被挤下线。</p>
+          <div class="meta">各档上限见套餐对比表。</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <span class="kicker">FAQ</span>
+      <h2>常见问题，左边看，右边也有</h2>
+      <p class="lead">这些问题被问得最多，我们把答案写完整，省得你发消息等回复。</p>
+
+      <div class="faq-grid">
+        <article class="qa">
+          <h3><span class="q">Q</span>三档之间最本质的区别是什么？</h3>
+          <p>主要是三件事：每月流量、同时在线设备数、以及线路与支持的等级。基础版够日常使用；旗舰版在流量、设备数和线路优化上更宽裕；团队版面向多人共用，设备和流量都给得更多，另有定制路由与专人对接。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>我应该选月付还是年付？</h3>
+          <p>第一次用建议先月付，确认日常体验符合预期后再转年付。年付是按 12 个月一次性结算，单价更低，但灵活性也相应降低，请按自己的使用确定性来定。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>设备数上限是怎么算的？</h3>
+          <p>按同一时间在线连接的设备数量计算，不是说你有几台设备就只能注册几台。基础版 3 台、旗舰版 5 台、团队版 20 台。手机和电脑同时在线，就算两台。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>流量用超了会怎样？</h3>
+          <p>每月流量按周期计量，超出后当月的可用情况会受限。具体处理方式请与我们确认，本页不代你承诺任何补偿条款。如果你经常贴着上限用，说明该往上调一档了。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>可以从一档换到另一档吗？</h3>
+          <p>可以提出变更，但涉及计费周期与差价的部分需要人工确认，规则以届时沟通的结果为准。本页不做在线下单，请通过官方联系渠道说明你的情况。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>你们提供退款吗？</h3>
+          <p>本页面不承诺任何退款政策。相关安排请在与我们沟通时直接询问，以届时给出的答复为准，不要依据本页内容自行推定。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>客户端从哪里下载？</h3>
+          <p>我们不在本页提供下载链接。请以你所用设备对应客户端的官方发布渠道为准，安装前核对来源与开发者信息，避免从不明站点获取安装包。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>连不上时我该先检查什么？</h3>
+          <p>按顺序排查：订阅信息是否填写正确、当前在线设备数是否已达上限、本地网络本身是否正常、客户端是否为较新版本。把这几项确认完，多数问题就能定位。仍无法解决时，把现象和报错内容整理清楚再联系我们。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>团队版适合什么样的使用场景？</h3>
+          <p>几个人共用、需要统一管理、对带宽和线路稳定性要求更高的时候。它提供 20 台设备同时在线、每月 1000GB 流量、VIP 专属高带宽节点、企业定制路由和专属客户经理。人数不多的话，旗舰版往往更划算。</p>
+        </article>
+
+        <article class="qa">
+          <h3><span class="q">Q</span>你们会记录我的使用记录吗？</h3>
+          <p>本页不对此作出承诺或描述，因为任何涉及日志与数据处理的说明都应以正式条款为准。如需了解，请直接向我们索取相关说明，不要以本页内容作为依据。</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <span>XLM · 订阅说明页</span>
+      <span>价格与权益以套餐对比表为准，其他事项请与我们沟通确认。</span>
+    </footer>
+
+  </main>
+</div><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
